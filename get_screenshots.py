@@ -13,6 +13,7 @@ options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--window-size=1920x900")
+options.binary_location = "chromedriver"
 
 
 
@@ -86,3 +87,7 @@ def run():
 
         take_timetable_screenshots(url=url, file_path=file_path, excluded_groups=excluded_groups, lan=lan)
         crop_screenshots(x1, x2, y1, y2, file_path)
+
+
+
+run()

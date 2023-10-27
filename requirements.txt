@@ -3,3 +3,4 @@ pandas
 apscheduler
 selenium
 mysql-connector-python
+Pillow
