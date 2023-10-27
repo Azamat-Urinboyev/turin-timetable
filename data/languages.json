@@ -1,0 +1,55 @@
+{
+    "en":{
+        "hello_msg": "Hello name123 \ud83d\udc4b \nWelcome to University timetable bot. In this bot, you get a weekly timetable automatically.",
+        "choose_univer": "Choose an available university below \u2b07\ufe0f",
+        "choose_lan": "Please, choose a language below \u2b07\ufe0f",
+        "lan_changed_success": "Language changed successfully. \u2705",
+        "ask_to_start": "Please, press /start again.",
+        "ask_group": "Choose one of the groups available.",
+        "successfull": "Done \u2705",
+        "timetable": "Timetable",
+        "timetable_week": "Timetable for this week.",
+        "back": "Back 🔙",
+        "feedback": "If you have some problems,send your message in any format(text, video, photo, voice). We will contack with you.",
+        "send": "Message send \u2705",
+
+        "admin_checked": "Choose one of the commands.",
+        "admin_controls": {
+            "Stats": "stats",
+            "Send message to all": "send_msg_all",
+            "Update timetable": "update_timetable",
+            "Users database": "get_users_db"
+        },
+        "ask_admin_msg": "Send you message"
+
+    },
+    "uz": {
+        "hello_msg": "Assalomu alaykum name123 \ud83d\udc4b \nUniversitet jadvali botiga xush kelibsiz. Bu bot orqali, siz haftalik o'quv jadvalini automatik tarzda olib turasiz.",
+        "choose_univer": "Quyidagi universitetlardan birini tanlang \u2b07\ufe0f",
+        "choose_lan": "Iltimos, quyidagi tillardan birini tanlang \u2b07\ufe0f",
+        "lan_changed_success": "Til o'zgartirildi. \u2705",
+        "ask_to_start": "/start ni qaytadan bosin.",
+        "ask_group": "Mavjud guruhlardan birini tanlang.",
+        "successfull": "Bajarildi \u2705",
+        "timetable": "Dars jadvali",
+        "timetable_week": "Shu hafta uchun Dars jadvali.",
+        "back": "Orqaga 🔙",
+        "feedback": "Agar biror muammoga uchrasangiz, xabar jo'nating (text, video, audio, rasm). Siz bilan qayta bog'lanamiz.",
+        "send": "Xabar yuborildi \u2705",
+
+        "admin_checked": "Biror buyruqni tanlang.",
+        "admin_controls": {
+            "Statistika": "stats",
+            "Hammaga habar yuborish": "send_msg_all",
+            "Dars jadvalini yangilash": "update_timetable",
+            "Foydalanuvchilar malumot bazasi": "get_users_db"
+        },
+        "ask_admin_msg": "Xabar yuboring"
+    },
+    "languages": {
+        "Uzbek": "change_lan_uz",
+        "English": "change_lan_en"
+    },
+    "timetable": ["Timetable", "Dars jadvali"],
+    "back": ["Back 🔙", "Orqaga 🔙"]
+}
