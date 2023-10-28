@@ -1,7 +1,7 @@
 import json
 import os
 import pandas as pd
-from get_screenshots import run
+import get_screenshots as update_timetable
 from threading import Thread
 
 
@@ -95,7 +95,7 @@ def save_user_database(database):
 
 
 def update_screenshots():
-	thread = Thread(target=run)
+	thread = Thread(target=update_timetable.run)
 	thread.start()
 
 async def send_timetable(bot, database, admin):

@@ -10,7 +10,7 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.utils.markdown import hbold
 from aiogram.fsm.context import FSMContext
 
-from config import DB_USER, DB_PASSWORD, TOKEN, FEEDBACK_GROUP, ADMIN
+from config import TOKEN, FEEDBACK_GROUP, ADMIN
 from states import User, Admin
 from data.database_setup import Database
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -35,7 +35,7 @@ dp = Dispatcher()
 bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
 
 
-db = Database(user=DB_USER, password=DB_PASSWORD)
+db = Database()
 scheduler = AsyncIOScheduler(timezone=utc)
 
 

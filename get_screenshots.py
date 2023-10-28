@@ -8,7 +8,7 @@ import pandas as pd
 import time
 import os
 
-options = Options()
+options = webdriver.ChromeOptions()
 options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
@@ -87,7 +87,3 @@ def run():
 
         take_timetable_screenshots(url=url, file_path=file_path, excluded_groups=excluded_groups, lan=lan)
         crop_screenshots(x1, x2, y1, y2, file_path)
-
-
-
-run()
