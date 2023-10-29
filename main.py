@@ -297,7 +297,8 @@ async def test(message: Message, state=FSMContext):
     user_lan = user_info[user_id]
     if message.text in languages["back"]:
         await state.clear()
-        await message.reply("Ok")
+        timetable_btn = func.reply_key([languages[user_lan]["timetable"]])
+        await message.reply("Ok", reply_markup=timetable_btn)
         return
     
     await bot.forward_message(chat_id=FEEDBACK_GROUP, from_chat_id=message.chat.id, message_id=message.message_id)
