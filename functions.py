@@ -103,11 +103,11 @@ async def send_timetable(bot, database, admin):
 
 	users_data = database.get_all_data()
 	for row in users_data:
-		if user_id == admin:
-			continue
 		user_id = row[0]
 		univer = row[3]
 		group = row[4]
+		if user_id == admin:
+			continue
 		photo_path = f"./screenshots/{univer}/{group}.png"
 		photo = FSInputFile(photo_path)
 		try:

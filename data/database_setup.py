@@ -11,7 +11,7 @@ class Database:
         PRIMARY KEY (id)
         )"""
 
-        self.connection = sqlite3.connect("users.db", check_same_thread=False)
+        self.connection = sqlite3.connect("./data/users.db", check_same_thread=False)
         self.cursor = self.connection.cursor()
 
         self.cursor.execute(users_table)
