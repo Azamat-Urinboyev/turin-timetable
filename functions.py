@@ -94,7 +94,11 @@ def save_user_database(database):
 	data.to_csv("./data/users.csv")
 
 
-def update_screenshots():
+def update_screenshots(only_turin=False):
+	if only_turin:
+		thread = Thread(target=update_timetable.run, kwargs={"only_turin": True})
+		thread.start()
+		return
 	thread = Thread(target=update_timetable.run)
 	thread.start()
 

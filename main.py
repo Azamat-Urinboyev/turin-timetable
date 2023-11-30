@@ -43,7 +43,9 @@ scheduler = AsyncIOScheduler(timezone=utc)
 def schedule_jobs():
     trigger_updating = CronTrigger(year="*", month="*", day_of_week="6", day="*", hour="18", minute="0", second="0")
     trigger_sending = CronTrigger(year="*", month="*", day_of_week="6", day="*", hour="18", minute="30", second="0")
+    trigger_updating_day = CronTrigger(hour="13", minute="10", second="0")
 
+    scheduler.add_job(func.update_screenshots, trigger=trigger_updating_day, kwargs={"only_turin": True})
     scheduler.add_job(func.update_screenshots, trigger=trigger_updating)
     scheduler.add_job(func.send_timetable, trigger=trigger_sending, args=(bot, db, ADMIN))
 

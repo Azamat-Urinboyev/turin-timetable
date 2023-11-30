@@ -64,7 +64,7 @@ def crop_screenshots(x1, x2, y1, y2, file_path):
 
 
 
-def run():
+def run(only_turin=False):
     screenshots_path = "./screenshots"
     if not os.path.exists(screenshots_path):
         os.mkdir(path=screenshots_path)
@@ -84,6 +84,9 @@ def run():
         if not os.path.exists(full_file_path):
             os.mkdir(full_file_path)
 
+        if only_turin:
+            if file_path != "ttpu":
+                continue
 
         take_timetable_screenshots(url=url, file_path=file_path, excluded_groups=excluded_groups, lan=lan)
         crop_screenshots(x1, x2, y1, y2, file_path)
